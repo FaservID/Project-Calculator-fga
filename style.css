@@ -1,0 +1,120 @@
+@import url('http://fonts.cdnfonts.com/css/standaris');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url('assets/svg/pattern.svg');
+}
+
+.calculator {
+    min-width: 350px;
+    min-height: 450px;
+    background-color: #b2bec3;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
+    font-family: 'standaris', sans-serif;
+                                                
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    border-radius: 15px;
+}
+
+.screen {
+    width: 100%px;
+    height: 150px;
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 5px 5px 5px 5px;
+
+}
+
+.resultScreen {
+    text-align: end;
+    padding: 17px;
+    font-size: 30px;
+}
+
+#result {
+    font-size: 50px;
+    line-height: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    user-select: all;
+}
+
+#resultText {
+    color: rgb(200, 172, 36) !important;
+    font-weight: bold;
+}
+
+.calculation {
+    font-size: 15px;
+    line-height: 14px;
+    color: rgb(200, 172, 36);
+    padding-top: 15px;
+}
+
+.numPad {
+    width: 100%px;
+    height: 100%px;
+    margin: 5px 5px 5px 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+}
+
+.numPadBtn {
+    background: #ffffff;
+    color: rgb(200, 172, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+
+.numPadBtn:hover {
+    background-color: rgb(200, 172, 36);
+    color: #fff;
+}
+
+.numPadOnClick {
+    -webkit-box-shadow: inset 0px 0px 135px -47px rgba(255,255,255,0.58);
+    -moz-box-shadow: inset 0px 0px 135px -47px rgba(255,255,255,0.58);
+    box-shadow: inset 0px 0px 135px -47px rgba(255,255,255,0.58);
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.zero {
+    width: 100%;
+    height: 100%;
+    grid-area: 5 / 1 / 6 / 3;
+    border-bottom-left-radius: 15px;
+}
+
+.equal {
+    width: 100%;
+    height: 170px;
+    grid-area: 3 / 4 / 6 / 5;
+    border-bottom-right-radius: 15px;
+}
